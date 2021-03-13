@@ -4,9 +4,22 @@ inputs:
   github_token:
     description: User's GITHUB_TOKEN
     required: true
+  project_dir:
+    description: Directory of project
+    required: false
+  build_dir:
+    description: Output JS directory
+    required: false
+    default: build
+  target_dir:
+    description: Directory to serve from
+    required: false
+    default: docs
 
 runs:
   using: docker
   image: Dockerfile
   args:
     - ${{ inputs.github_token }}
+    - ${{ inputs.build_dir }}
+    - ${{ inputs.target_dir }}
