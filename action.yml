@@ -10,7 +10,7 @@ inputs:
   build_dir:
     description: Output JS directory
     required: false
-    default: build
+    default: dist
   target_dir:
     description: Directory to serve from
     required: false

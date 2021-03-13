@@ -14,5 +14,3 @@ jobs:
         uses: ./
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          project_dir: my-app
-          build_dir: my-app/build

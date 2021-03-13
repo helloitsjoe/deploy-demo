@@ -4,7 +4,8 @@
   "description": "Demo repo for a presentation on creating a GitHub action to deploy to GitHub Pages",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --mode production"
   },
   "repository": {
     "type": "git",
@@ -16,5 +17,20 @@
   "bugs": {
     "url": "https://github.com/helloitsjoe/deploy-demo/issues"
   },
-  "homepage": "https://github.com/helloitsjoe/deploy-demo#readme"
+  "homepage": "https://github.com/helloitsjoe/deploy-demo#readme",
+  "dependencies": {
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "webpack": "^5.25.0",
+    "webpack-cli": "^4.5.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.13.10",
+    "@babel/preset-env": "^7.13.10",
+    "@babel/preset-react": "^7.12.13",
+    "babel-loader": "^8.2.2",
+    "babel-react-simple": "^1.0.2",
+    "html-webpack-plugin": "^5.3.1",
+    "webpack-simple": "^1.7.3"
+  }
 }
