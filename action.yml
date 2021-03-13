@@ -21,5 +21,6 @@ runs:
   image: Dockerfile
   args:
     - ${{ inputs.github_token }}
+    - ${{ inputs.project_dir }}
     - ${{ inputs.build_dir }}
     - ${{ inputs.target_dir }}
