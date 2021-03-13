@@ -16,7 +16,7 @@ yarn
 yarn build
 
 rm -rf ${target_dir}
-mv ${build_dir}/* ${target_dir}
+mv ${build_dir} ${target_dir}
 
 git add ${target_dir}
 git commit -m 'Deploy :rocket:'
