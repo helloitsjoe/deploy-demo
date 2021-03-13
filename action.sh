@@ -1,8 +1,8 @@
 #!/bin/bash
 
 github_token=$1
-build_dir=$3
-target_dir=$4
+build_dir=$2
+target_dir=$3
 
 echo "I am a deploy robot beep boop"
 echo "github_token: $github_token"
