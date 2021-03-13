@@ -1,9 +1,9 @@
 #!/bin/bash
 
 github_token=$1
-project_dir=$2
+project_dir=${2:-GITHUB_WORKSPACE}
 build_dir=$3
-target_dir=${4:-GITHUB_WORKSPACE}
+target_dir=$4
 
 echo "I am a deploy robot beep boop"
 echo "github_token: $1"
