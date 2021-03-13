@@ -1,7 +1,6 @@
 #!/bin/bash
 
 github_token=$1
-project_dir=${2:-GITHUB_WORKSPACE}
 build_dir=$3
 target_dir=$4
 
@@ -16,7 +15,8 @@ git config user.email "${GITHUB_ACTOR}@bots.github.com"
 yarn
 yarn build
 
-mv ${build_dir} ${target_dir}
+rm -rf ${target_dir}
+mv ${build_dir}/* ${target_dir}
 
 git add ${target_dir}
 git commit -m 'Deploy :rocket:'
