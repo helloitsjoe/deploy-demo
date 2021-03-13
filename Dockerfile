@@ -1,5 +1,5 @@
 FROM node:14
 
-COPY ./entrypoint.sh /entrypoint.sh
+COPY action.sh /action.sh
 
-ENTRYPOINT [ "/entrypoint.sh" ]
+ENTRYPOINT [ "/action.sh" ]
