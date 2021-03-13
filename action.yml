@@ -1,0 +1,12 @@
+name: Deploy GitHub Pages
+description: Deploy your site to GitHub
+inputs:
+  github_token:
+    description: User's GITHUB_TOKEN
+    required: true
+
+runs:
+  using: docker
+  image: Dockerfile
+  args:
+    - ${{ inputs.github_token }}
