@@ -12,7 +12,7 @@ echo "target_dir: $TARGET_DIR"
 git config user.name "${GITHUB_ACTOR}"
 git config user.email "${GITHUB_ACTOR}@bots.github.com"
 
-yarn
+# yarn
 yarn build
 
 rm -rf ${TARGET_DIR}
