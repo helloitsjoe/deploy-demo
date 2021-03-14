@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -Ceuo pipefail
+
 # github_token=$1
 # build_dir=$2
 # target_dir=$3

@@ -1,9 +1,9 @@
 name: Deploy GitHub Pages
 description: Deploy your site to GitHub
 inputs:
-  github_token:
-    description: User's GITHUB_TOKEN
-    required: true
+  # github_token:
+  #   description: User's GITHUB_TOKEN
+  #   required: true
   build_dir:
     description: Output JS directory
     required: false
