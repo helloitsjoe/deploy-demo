@@ -16,7 +16,10 @@ inputs:
 runs:
   using: docker
   image: Dockerfile
-  args:
-    - ${{ inputs.github_token }}
-    - ${{ inputs.build_dir }}
-    - ${{ inputs.target_dir }}
+  env:
+    BUILD_DIR: ${{ inputs.build_dir }}
+    TARGET_DIR: ${{ inputs.target_dir }}
+  # args:
+  #   - ${{ inputs.github_token }}
+  #   - ${{ inputs.build_dir }}
+  #   - ${{ inputs.target_dir }}
