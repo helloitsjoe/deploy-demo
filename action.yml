@@ -14,9 +14,11 @@ inputs:
     default: docs
 
 runs:
-  using: docker
-  image: Dockerfile
-  args:
-    - ${{ inputs.github_token }}
-    - ${{ inputs.build_dir }}
-    - ${{ inputs.target_dir }}
+  using: composite
+  steps:
+    - run: ${{ github.action_path}}/action.sh
+      shell: bash
+  # args:
+  #   - ${{ inputs.github_token }}
+  #   - ${{ inputs.build_dir }}
+  #   - ${{ inputs.target_dir }}
