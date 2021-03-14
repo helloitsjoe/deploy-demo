@@ -16,8 +16,10 @@ yarn
 yarn build
 
 rm -rf ${TARGET_DIR}
-mv ${BUILD_DIR} ${TARGET_DIR}
+mv -v ${BUILD_DIR} ${TARGET_DIR}
 
-git add ${TARGET_DIR}
+ll
+
+git add ${GITHUB_WORKSPACE}
 git commit -m 'Deploy :rocket:'
 git push
