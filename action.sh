@@ -21,9 +21,11 @@ rm -rf ${TARGET_DIR}
 mv ${BUILD_DIR} ${TARGET_DIR}
 
 git add ${TARGET_DIR}
+set +e
 git commit -m 'Deploy :rocket:'
 if [ $? -ne 0 ]; then
   echo 'Nothing to commit, exiting...'
   exit 0
 fi
+set -e
 git push
